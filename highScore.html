@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Leaderboard</title>
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" 
+            rel="stylesheet" />
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="hs.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="lboard_section">
+                <div class="lboard_tabs">
+                    <div class="tabs">
+                        <ul>
+                            <li data-li="today">Today</li>
+                        </ul>
+                    </div>
+                </div>
+            <div class="lboard_wrap">
+                <div class="lboard_item today" style="display: none;">
+                    <div class="lboard_mem">
+                        <div class="img">
+                                <img src="bee.png" alt="picture_1">
+                        </div>
+                        <div class="name_bar">
+                                <p><span>1.</span>Jeonghan</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                20 moves
+                            </div>
+                        </div>
+                        <div class="lboard_mem">
+                            <div class="img">
+                                <img src="chameleon.png" alt="picture_2">
+                            </div>
+                            <div class="name_bar">
+                                <p><span>2.</span>Vernon</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                22 moves
+                            </div>
+                        </div>
+                        <div class="lboard_mem">
+                            <div class="img">
+                                <img src="macaw.png" alt="picture_2">
+                            </div>
+                            <div class="name_bar">
+                                <p><span>3.</span>Zchan</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                23 moves
+                            </div>
+                        </div>
+                        <div class="lboard_mem">
+                            <div class="img">
+                                <img src="gorilla.png" alt="picture_1">
+                            </div>
+                            <div class="name_bar">
+                                <p><span>4.</span>Wonwoo</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                25 moves
+                            </div>
+                        </div>
+                        <div class="lboard_mem">
+                            <div class="img">
+                                <img src="sloth.png" alt="picture_2">
+                            </div>
+                            <div class="name_bar">
+                                <p><span>5.</span>Scoups</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 50%"></div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                31 moves
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls-container">
+                        <div id="highScore">
+                            <h1 id="result">Leaderboard</h1>
+                            <ul id="highScoreList"></ul>
+                            <a href="/Users/User/Documents/MemoryCardGame/index.html">
+                            <button id="restart">Back</button></a>
+                        </div>
+                    </div>
+            <script src="highScore.js"></script>
+    </body>
+</html>

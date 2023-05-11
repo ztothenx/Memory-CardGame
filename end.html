@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Memory Game</title>
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" 
+            rel="stylesheet" />
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="controls-container">
+            <p id="result"></p>
+            <form>
+                <p id="endtext">Enter your name below to save your score</p>
+                <input 
+                type="text" 
+                name="username" 
+                id="username"
+                placeholder="Enter your name"/>
+                <button 
+                type="submit"
+                id="saveScore"
+                onclick="saveHighScore(event)"
+                disabled>Save</button>
+            </form>
+            <a href="/Users/User/Documents/MemoryCardGame/index.html">
+            <button id="restart">Play again</button></a>
+        </div>
+        <script src="end.js"></script>
+    </body>
+</html>
