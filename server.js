@@ -12,7 +12,7 @@ const connection = mysql.createConnection(process.env.DATABASE_URL)
 
 app.post('/create', jsonParser, function (req, res, next) {
     connection.execute(
-        'Input your information(Username, moves ) VALUES (?,?)',
+        'INPUT your information(Username, moves ) VALUES (?,?)',
         [req.body.id_user, req.body.moves],
         function (err, results, fields) {
             if (err) {
@@ -38,7 +38,7 @@ app.get('/create', jsonParser, function (req, res, next) {
 
 app.put('/create', jsonParser, function (req, res, next) {
         connection.execute(
-            'Update your information(Username, moves ) VALUES (?,?)',
+            'UPDATE your information(Username, moves ) VALUES (?,?)',
         [req.body.id_user, req.body.moves],
             function (err, results, fields) {
             if (err) {
