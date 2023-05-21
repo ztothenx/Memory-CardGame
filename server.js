@@ -26,8 +26,8 @@ app.post('/create', jsonParser, function (req, res, next) {
 
 app.put('/create', jsonParser, function (req, res, next) {
         connection.execute(
-            'UPDATE gameusers SET id_user=?, moves=?',
-        [req.body.id_user, req.body.moves],
+            'UPDATE gameusers SET moves=? WHERE id_user=?',
+        [ req.body.moves, req.body.id_user],
             function (err, results, fields) {
             if (err) {
                 res.json({ status: 'error', message: err });
