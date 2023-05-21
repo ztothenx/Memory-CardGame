@@ -52,7 +52,7 @@ app.put('/create', jsonParser, function (req, res, next) {
 
 app.get('/gameuser', function (req, res, next) {
     connection.query(
-		'SELECT * FROM gameusers',
+		'SELECT * FROM gameusers ORDER BY moves ASC',
 		function(err, results, fields) {
 			res.send(results)
 		}
