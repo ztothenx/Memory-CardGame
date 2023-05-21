@@ -25,7 +25,7 @@ app.post('/create', jsonParser, function (req, res, next) {
     });
 
 
-app.get('/gameusers', jsonParser, function (req, res, next) {
+app.get('/create', jsonParser, function (req, res, next) {
         connection.execute(
             'SELECT * FROM gameuser', (err, result) => {
                 if (err) {
@@ -49,5 +49,14 @@ app.put('/create', jsonParser, function (req, res, next) {
             }
         );
     });
+
+app.get('/gameuser', function (req, res, next) {
+    connection.query(
+		'SELECT * FROM gameusers',
+		function(err, results, fields) {
+			res.send(results)
+		}
+	)
+});
 
 app.listen(process.env.PORT || 3333)
