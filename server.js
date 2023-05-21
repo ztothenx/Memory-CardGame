@@ -24,18 +24,6 @@ app.post('/create', jsonParser, function (req, res, next) {
         );
     });
 
-
-app.get('/create', jsonParser, function (req, res, next) {
-        connection.execute(
-            'SELECT * FROM gameuser', (err, result) => {
-                if (err) {
-                    console.log(err);
-                } else {
-                    res.send(result);
-                }
-            });
-    });
-
 app.put('/create', jsonParser, function (req, res, next) {
         connection.execute(
             'UPDATE gameusers SET id_user=?, moves=?',
