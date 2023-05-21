@@ -50,6 +50,17 @@ app.put('/create', jsonParser, function (req, res, next) {
         );
     });
 
+app.delete('/create', jsonParser, function (req, res, next) {
+        connection.execute(
+            'DELETE FROM gameuser WHERE id_user = ?',[req.body.id_user] ,(err, result) =>{
+                if (err) {
+                    console.log(err);
+                } else {
+                    res.send(result);
+                }
+            });
+    });
+
 app.get('/gameuser', function (req, res, next) {
     connection.query(
 		'SELECT * FROM gameusers ORDER BY moves ASC',
