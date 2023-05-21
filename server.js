@@ -52,7 +52,7 @@ app.put('/create', jsonParser, function (req, res, next) {
 
 app.delete('/create', jsonParser, function (req, res, next) {
         connection.execute(
-            'DELETE FROM gameuser WHERE id_user = ?',[req.body.id_user] ,(err, result) =>{
+            'DELETE FROM gameusers WHERE id_user = ?',[req.body.id_user] ,(err, result) =>{
                 if (err) {
                     console.log(err);
                 } else {
