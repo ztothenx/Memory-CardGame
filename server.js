@@ -56,7 +56,7 @@ app.delete('/create', jsonParser, function (req, res, next) {
                 if (err) {
                     console.log(err);
                 } else {
-                    res.send("Delete data already");
+                    res.send(result);
                 }
             });
     });
